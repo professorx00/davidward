@@ -17,18 +17,20 @@ export default function Home() {
               React JS, Vue JS, React Native, Node JS, Nuxt JS, Next JS, Express
               JS, Passport JS,HTML 5,Handlebars, Firebase
             </p>
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-resumeBlue rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:mx-7 m-5"
-            >
-              Contact
-            </a>
-            <a
-              href="/portfolio"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-resumeBlue rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:mx-7 m-5"
-            >
-              Portfolio
-            </a>
+            <div className="flex sm:flex-row flex-col">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-resumeBlue rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:mx-7 m-5"
+              >
+                Contact
+              </a>
+              <a
+                href="/portfolio"
+                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-resumeBlue rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:mx-7 m-5"
+              >
+                Portfolio
+              </a>
+            </div>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex justify-center items-center">
             <Image
