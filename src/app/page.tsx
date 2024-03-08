@@ -7,17 +7,17 @@ export default function Home() {
       <section className="bg-gradient-to-tr from-bgGray via-bgGray to-dark rounded-xl border-slate-900 xl:w-7/12 w-10/12 p-2">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 justify-center items-center flex flex-col">
-            <h1 className="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-5xl xl:text-6xl text-center">
+            <h1 className="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-5xl xl:text-6xl text-center text-dark">
               David Ward
             </h1>
             <h3 className="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-2xl xl:text-4xl text-resumeBlue text-center">
               Full Stack Developer
             </h3>
-            <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 text-md md:text-lg lg:text-xl dark:text-gray-400 text-center lg:text-left">
+            <p className="max-w-2xl mb-6 font-light text-dark lg:mb-8 text-md md:text-lg lg:text-xl dark:text-gray-400 text-center lg:text-left">
               React JS, Vue JS, React Native, Node JS, Nuxt JS, Next JS, Express
               JS, Passport JS,HTML 5,Handlebars, Firebase
             </p>
-            <div className="flex sm:flex-row flex-col">
+            <div className="flex flex-row">
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-resumeBlue rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:mx-7 lg:m-5 m-1"
