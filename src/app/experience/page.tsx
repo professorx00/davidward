@@ -12,7 +12,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-12/12 flex-col items-center justify-between p-24  bg-gradient-to-r from-slate-500 to-slate-800">
+    <main className="flex min-h-screen w-12/12 flex-col items-center justify-between lg:p-24  bg-gradient-to-r from-slate-500 to-slate-800">
       <h1 className="mb-12 text-4xl font-extrabold tracking-tight text-center md:text-5xl xl:text-6xl text-resumeBlue">
         Experience
       </h1>

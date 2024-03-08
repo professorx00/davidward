@@ -3,16 +3,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-r from-slate-500 to-slate-800 w-12/12">
-      <div className="w-11/12">
-        <h1 className="mb-12 text-4xl font-extrabold tracking-tight text-center md:text-5xl xl:text-6xl text-resumeBlue">
+    <main className="flex min-h-screen flex-col items-center justify-between p-10 lg:p-24 bg-gradient-to-r from-slate-500 to-slate-800 w-full">
+      <div className="w-full ">
+        <h1 className="text-4xl font-extrabold tracking-tight text-center md:text-5xl xl:text-6xl text-resumeBlue">
           About Me
         </h1>
-        <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue">
+
+        <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue hidden md:flex justify-center items-center">
           Innovative Full-Stack Developer with a Flair for Creativity
         </h1>
-        <div className="w-10/12 flex flex-row justify-center items-start gap-14 m-11">
-          <div className="w-1/3 bg-slate-600 rounded-b-xl border border-orange-300 shadow-2xl shadow-slate-800">
+
+        <div className="w-full flex flex-col lg:flex-row justify-center items-start gap-14 ">
+          <div className="lg:w-1/3 w-full bg-slate-600 rounded-b-xl border border-orange-300 shadow-2xl shadow-slate-800">
             <div className="w-full bg-dark p-6 border-b border-orange-300">
               <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue">
                 The Beginning
@@ -37,7 +39,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-1/3 bg-slate-600 rounded-b-xl border border-blue-300 shadow-2xl shadow-slate-800">
+          <div className="lg:w-1/3 w-full bg-slate-600 rounded-b-xl border border-blue-300 shadow-2xl shadow-slate-800">
             <div className="w-full bg-dark p-6 border-b border-blue-300">
               <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue">
                 Currently
@@ -57,7 +59,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-1/3 bg-slate-600 rounded-b-xl border border-rose-300 shadow-2xl shadow-slate-800">
+          <div className="lg:w-1/3 w-full bg-slate-600 rounded-b-xl border border-rose-300 shadow-2xl shadow-slate-800">
             <div className="w-full bg-dark p-6 border-b border-rose-300">
               <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue">
                 The Future
@@ -80,8 +82,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-10/12 flex flex-row justify-center items-start gap-14 m-11">
-          <div className="w-1/3 bg-slate-600 rounded-b-xl border border-emerald-300 shadow-2xl shadow-slate-800">
+        <div className="w-full flex flex-col lg:flex-row justify-center items-start gap-14">
+          <div className="lg:w-1/3 w-full bg-slate-600 rounded-b-xl border border-emerald-300 shadow-2xl shadow-slate-800">
             <div className="w-full bg-dark p-6  border-b border-emerald-300">
               <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue">
                 Outside of My Career
@@ -98,7 +100,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-1/3 bg-slate-600 rounded-b-xl border border-violet-300 shadow-2xl shadow-slate-800">
+          <div className="lg:w-1/3 w-full bg-slate-600 rounded-b-xl border border-violet-300 shadow-2xl shadow-slate-800">
             <div className="w-full bg-dark p-6 border-b border-violet-300">
               <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue">
                 Family
@@ -114,7 +116,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-1/3 bg-slate-600 rounded-b-xl border border-cyan-300 shadow-2xl shadow-slate-800">
+          <div className="lg:w-1/3 w-full bg-slate-600 rounded-b-xl border border-cyan-300 shadow-2xl shadow-slate-800">
             <div className="w-full bg-dark p-6 border-b border-cyan-300">
               <h1 className="text-2xl font-extrabold tracking-tight text-center text-resumeBlue">
                 Dedication

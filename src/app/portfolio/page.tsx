@@ -101,11 +101,11 @@ export default function Portfolio() {
     else setCurrent(current + 1);
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-r from-slate-500 to-slate-800">
-      <h1 className="mb-12 text-4xl font-extrabold tracking-tight text-center md:text-5xl xl:text-6xl text-resumeBlue">
+    <main className="flex w-full min-h-screen flex-col items-center justify-center lg:p-24 bg-gradient-to-r from-slate-500 to-slate-800">
+      <h1 className="w-full text-4xl font-extrabold tracking-tight text-center md:text-5xl xl:text-6xl text-resumeBlue">
         Portfolio
       </h1>
-      <div className="p-24 w-[50%] m-auto pt-11 bg-slate-700 rounded-xl shadow-2xl shadow-slate-950">
+      <div className=" bg-slate-700 rounded-xl shadow-2xl shadow-slate-950  h-10/12 w-full max-w-6xl">
         <div className="overflow-hidden relative">
           <div
             className={`flex transition ease-out duration-40`}
@@ -119,13 +119,13 @@ export default function Portfolio() {
                   src={el.src}
                   alt="..."
                   key={`image${i}`}
-                  className="w-screen h-full"
+                  className="w-full h-8/12"
                 />
               );
             })}
           </div>
 
-          <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
+          <div className="absolute top-0 h-full w-full justify-between items-center flex text-white text-3xl">
             <button onClick={previousSlide} className="bg-black rounded-full">
               <BsFillArrowLeftCircleFill />
             </button>
@@ -134,7 +134,7 @@ export default function Portfolio() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center text-light">
+        <div className="flex flex-col items-center justify-center text-center text-light">
           <h1 className="text-4xl">{slides[current].title}</h1>
           <p>{slides[current].description}</p>
           <p>Technology Used</p>

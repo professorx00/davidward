@@ -22,12 +22,12 @@ export default function Home() {
   const [formDisable, setFormDisable] = useState(false);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 w-12/12 relative  bg-gradient-to-r from-slate-500 to-slate-800">
+    <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 w-12/12 relative  bg-gradient-to-r from-slate-500 to-slate-800">
       <Alert
         className={
           alertOpen
-            ? "w-6/12 absolute top-38 mt-5 opacity-100 transition-opacity duration-500"
-            : "w-6/12 absolute top-38 mt-5 opacity-0 transition-opacity duration-500"
+            ? "lg:w-6/12 w-full absolute top-38 mt-5 opacity-100 transition-opacity duration-500"
+            : "lg:w-6/12 w-full absolute top-38 mt-5 opacity-0 transition-opacity duration-500"
         }
         color="success"
         onDismiss={() => setAlertOpen(false)}
@@ -35,7 +35,7 @@ export default function Home() {
         <span className="font-medium">Thank you!</span> Your information has
         been sent off to me!
       </Alert>
-      <div className="w-7/12 flex flex-col justify-center items-center bg-dark rounded-2xl p-24 shadow-2xl shadow-slate-950">
+      <div className="lg:w-7/12 w-full flex flex-col justify-center items-center bg-dark rounded-2xl lg:p-24 shadow-2xl shadow-slate-950">
         <h1 className="mb-12 text-4xl font-extrabold tracking-tight text-center md:text-5xl xl:text-6xl text-resumeBlue">
           Contact Me
         </h1>
@@ -59,7 +59,10 @@ export default function Home() {
           }}
         >
           {(props) => (
-            <form onSubmit={props.handleSubmit} className="w-10/12 ">
+            <form
+              onSubmit={props.handleSubmit}
+              className="lg:w-10/12 w-full p-4 "
+            >
               <div className="mt-4">
                 <label className="block mb-2 text-lg font-medium text-light">
                   Name

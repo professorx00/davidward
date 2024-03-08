@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className + "w-screen p-0 m-0"}>
         <AppNavBar />
         {children}
       </body>
